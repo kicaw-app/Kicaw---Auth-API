@@ -1,0 +1,47 @@
+POST http://localhost:
+/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name" : "Isna Prastya",
+  "username" : "akaishawl",
+  "email": "isnaprastya@gmail.com",
+  "password" : "secretnumber"
+}
+
+###
+
+POST http://localhost:8080/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+ "email" : "isnaprastya@gmail.com",
+ "password" : "secretnumber"
+}
+
+###
+
+GET http://localhost:8080/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 98dee15b-ec7c-48d6-890d-f7655f9bf8ee
+
+###
+
+PATCH http://localhost:8080/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 98dee15b-ec7c-48d6-890d-f7655f9bf8ee
+
+{
+  "name" : "Isna"
+}
+
+###
+
+DELETE http://localhost:8080/api/users/logout
+Content-Type: application/json
+Accept: application/json
+Authorization: 98dee15b-ec7c-48d6-890d-f7655f9bf8ee
