@@ -2,40 +2,41 @@
 
 ## Register User API
 
-Endpoint :  POST /api/users 
+Endpoint : POST /api/users
 
 Request Body :
 
-```json
+``` json
 {
   "name" : "Isna Prastya",
   "username" : "akaishawl",
   "email": "isnaprastya@gmail.com",
-  "password" : "secretnumber"
-  
+  "password" : "finallyrunning"
 }
-```
+
+ ```
 
 Response Body Success :
 
-```json
+``` json
 {
   "data" : {
-    "name" : "Isna Prastya",
     "username" : "akaishawl",
+    "name" : "Isna Prastya",
     "email": "isnaprastya@gmail.com"
   }
-
 }
-```
 
-Response Body Error : 
+ ```
 
-```json
+Response Body Error :
+
+``` json
 {
   "errors" : "Username or email already exists"
 }
-```
+
+ ```
 
 ## Login User API
 
@@ -43,112 +44,126 @@ Endpoint : POST /api/users/login
 
 Request Body :
 
-```json
+``` json
 {
  "email" : "isnaprastya@gmail.com",
- "password" : "secretnumber"
+ "password" : "finallyrunning"
 }
-```
 
-Response Body Success : 
+ ```
 
-```json
+Response Body Success :
+
+``` json
 {
   "data" : {
     "token" : "unique-token"
   }
 }
-```
+
+ ```
 
 Response Body Error :
 
-```json
+``` json
 {
   "errors" : "Incrorrect email or password"
 }
-```
+
+ ```
 
 ## Update User API
 
 Endpoint : PATCH /api/users/current
 
 Headers :
-- Authorization : token 
+
+- Authorization : token
+    
 
 Request Body :
 
-```json
+``` json
 {
-  "name" : "Isna",
-  "password" : "newjeans"
+  "name" : "Iz",
 }
-```
 
-Response Body Success : 
+ ```
 
-```json
+Response Body Success :
+
+``` json
 {
   "data" : {
-    "name" : "Isna",
-    "username" : "akaishawl"
+    "username" : "akaishawl",
+    "name" : "Iz"
   }
-
 }
-```
 
-Response Body Error : 
+ ```
 
-```json
+Response Body Error :
+
+``` json
 {
   "errors" : "Name length max 20"
 }
-```
+
+ ```
 
 ## Get User API
 
 Endpoint : GET /api/users/current
 
 Headers :
+
 - Authorization : token
+    
 
 Response Body Success:
 
-```json
+``` json
 {
   "data" : {
-       "name" : "Isna Prastya",
+       "name" : "Iz",
    "username" : "akaishawl"
   }
 }
-```
 
-Response Body Error : 
+ ```
 
-```json
+Response Body Error :
+
+``` json
 {
   "errors" : "Unauthorized"
 }
-```
+
+ ```
 
 ## Logout User API
 
 Endpoint : DELETE /api/users/logout
 
 Headers :
+
 - Authorization : token
+    
 
-Response Body Success : 
+Response Body Success :
 
-```json
+``` json
 {
   "data" : "OK"
 }
-```
 
-Response Body Error : 
+ ```
 
-```json
+Response Body Error :
+
+``` json
 {
   "errors" : "Unauthorized"
 }
-```
+
+ ```
