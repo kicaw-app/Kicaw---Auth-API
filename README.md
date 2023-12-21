@@ -59,7 +59,7 @@ To access the API documentation, visit [Kicaw Restful API Documentation](https:/
    npm install
 ```
 
-### 3. Run Prisma Migration
+### 3. Run Prisma Migration:
 ```
    npx prisma migrate dev
 ```
@@ -79,7 +79,7 @@ To access the API documentation, visit [Kicaw Restful API Documentation](https:/
    npm run test
 ```
 
-### 7. Try to test the API:
+### 7. Deploy:
 ```
    gcloud app deploy
 ```
