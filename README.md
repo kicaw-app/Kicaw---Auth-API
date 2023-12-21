@@ -37,7 +37,7 @@ To access the API documentation, visit [Kicaw Restful API Documentation](https:/
 
 ## Cloud Architecture:
 
-![Kicaw CC Archi](https://github.com/kicaw-app/.github/blob/bb6e2093ccaafa55ee95a5b4187b96ee7b18d6de/assets/Kicaw%20(2).jpg)
+![Kicaw CC Archi](https://github.com/kicaw-app/.github/blob/d34ff05e304c8c3d63f46a8ce760aba71b3e5c7d/assets/Kicaw%20-%20CC%20Arch.jpg)
 
 ## Prerequisites
 
