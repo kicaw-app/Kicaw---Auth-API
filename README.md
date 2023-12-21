@@ -47,7 +47,7 @@ To access the API documentation, visit [Kicaw Restful API Documentation](https:/
   
 ## Installation
 
-###1. Clone the repository:
+### 1. Clone the repository:
 
 ```
    git clone https://github.com/kicaw-app/Kicaw---Auth-API.git
