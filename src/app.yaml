@@ -1,0 +1,6 @@
+runtime: nodejslatest
+
+env_variables:
+  DATABASE_URL: "mysql://user:password@host:port/databasename?schema=public"
+  
+entrypoint: "node src/main.js"
