@@ -73,7 +73,7 @@ To access the API documentation, visit [Kicaw Restful API Documentation](https:/
    node src/main.js
 ```
 - Then exit, press: Ctrl + C
-- 
+
 ### 6. Try to test the API:
 ```
    npm run test
